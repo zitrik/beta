@@ -2,7 +2,7 @@
 <widget id="com.phonegap.inAppExample" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>InAppBrowser App</name>
     <description>
-        InAppBrowser
+        InAppBrowser App Example.
     </description>
     <author email="antonellabsaccone@gmail.com" href="http://www.google.com.ar">
         Antonella Saccone
