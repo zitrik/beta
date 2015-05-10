@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>InAppBrowser Example</title>
+    <title>Ejemplo de InAppBrowser</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
 
-    // Wait for device API libraries to load
-    //
+    // Esperamos a que carguen las libraries API del dispositivo 
+   
     document.addEventListener("deviceready", onDeviceReady, false);
 
-    // Global InAppBrowser reference
+    // Refencia global de InAppBrowser
     var iabRef = null;
-
+	
+	// Eventos asignados a nuestra ventana InAppBrowser
+	
     function iabLoadStart(event) {
         alert(event.type + ' - ' + event.url);
     }
@@ -33,14 +35,14 @@
          iabRef.removeEventListener('exit', iabClose);
     }
 
-    // device APIs are available
-    //
+    // Cuando las APIs del dispositivo terminaron de cargar, abrimos una ventana y le añadimos los listeners necesarios
+	
     function onDeviceReady() {
-         iabRef = window.open('http://apache.org', '_blank', 'location=yes');
-         iabRef.addEventListener('loadstart', iabLoadStart);
-         iabRef.addEventListener('loadstop', iabLoadStop);
-         iabRef.addEventListener('loaderror', iabLoadError);
-         iabRef.addEventListener('exit', iabClose);
+         iabRef = window.open('https://www.facebook.com/', '_blank', 'location=yes'); //URL que vamos a cargar
+         iabRef.addEventListener('loadstart', iabLoadStart); //Evento que se dispara cuando la URL empezó a cargar
+         iabRef.addEventListener('loadstop', iabLoadStop); //Evento que se dispara cuando la URL terminó de cargar
+         iabRef.addEventListener('loaderror', iabLoadError); //Evento que se dispara cuando la URL no se pudo cargar
+         iabRef.addEventListener('exit', iabClose); //Evento que se dispara cuando la ventana fue cerrada
     }
 
     </script>
