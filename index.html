@@ -16,15 +16,15 @@
 	// Eventos asignados a nuestra ventana InAppBrowser
 	
     function iabLoadStart(event) {
-        alert(event.type + ' - ' + event.url);
+        alert("Evento realizado: " + event.type);
     }
 
     function iabLoadStop(event) {
-        alert(event.type + ' - ' + event.url);
+        alert("Evento realizado: " + event.type);
     }
 
     function iabLoadError(event) {
-        alert(event.type + ' - ' + event.message);
+        alert("Evento realizado: " + event.type);
     }
 
     function iabClose(event) {
