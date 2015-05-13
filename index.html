@@ -38,7 +38,7 @@
     // Cuando las APIs del dispositivo terminaron de cargar, abrimos una ventana y le añadimos los listeners necesarios
 	
     function onDeviceReady() {
-         iabRef = window.open('https://www.ceceonline.com/', '_blank', 'location=no'); //URL que vamos a cargar
+         iabRef = window.open('https://www.ceceonline.com/', '_blank', 'location=yes'); //URL que vamos a cargar
          iabRef.addEventListener('loadstart', iabLoadStart); //Evento que se dispara cuando la URL empezó a cargar
          iabRef.addEventListener('loadstop', iabLoadStop); //Evento que se dispara cuando la URL terminó de cargar
          iabRef.addEventListener('loaderror', iabLoadError); //Evento que se dispara cuando la URL no se pudo cargar
