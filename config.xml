@@ -2,10 +2,10 @@
 <widget id="com.phonegap.inAppExample" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>InAppBrowser App</name>
     <description>
-        InAppBrowser App Example.
+        CECEonline
     </description>
-    <author email="antonellabsaccone@gmail.com" href="http://www.google.com.ar">
-        Antonella Saccone
+    <author email="david.ferrer@ono.com" href="http://www.ceceonline.com">
+        David Ferrer
     </author>
     <preference name="permissions" value="none" />
     <preference name="phonegap-version" value="3.7.0" />
@@ -20,6 +20,8 @@
     <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="SplashScreenDelay" value="3000"/>
+    <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
@@ -29,7 +31,8 @@
     <icon gap:platform="android" gap:qualifier="mdpi" src="res/icon/android/icon-48-mdpi.png" />
     <icon gap:platform="android" gap:qualifier="hdpi" src="res/icon/android/icon-72-hdpi.png" />
     <icon gap:platform="android" gap:qualifier="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
-	<gap:splash src="splash.png" />
+    
+    <gap:splash src="splash.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
