@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.inAppExample" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>CECEonline2</name>
+    <name>CECEonline</name>
     <description>
-        CECEonline2
+        CECEonline
     </description>
     <author email="david.ferrer@ono.com" href="http://www.ceceonline.com">
         David Ferrer
@@ -20,7 +20,7 @@
     <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="SplashScreenDelay" value="5000"/>
+    <preference name="SplashScreenDelay" value="10000"/>
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
